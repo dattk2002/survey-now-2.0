@@ -1,0 +1,25 @@
+
+.div-qr-and-store {
+  display: flex;
+}
+
+.div-qr-and-store .div-qr {
+  text-align: right;
+}
+
+.div-qr-and-store .div-qr img {
+  width: 25%;
+}
+
+.div-store {
+  display: grid;
+  margin-left: 1.5%;
+}
+
+.div-store .img-first {
+  margin-top: 20px;
+}
+
+.div-store .img-second {
+  margin-top: 20px;
+}

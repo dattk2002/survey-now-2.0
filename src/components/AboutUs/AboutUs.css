@@ -1,0 +1,27 @@
+.about-us-container {
+  text-align: right;
+}
+
+.about-us-content {
+  margin: 3% 6% 0 6%;
+}
+
+.about-us-content h3 {
+    font-size: 35px;
+  }
+
+  .about-us-content p {
+    margin-top: 0.5%;
+    margin-bottom: 2%;
+
+  }
+
+.btn-join-us {
+  text-align: center;
+  margin-top: 7%;
+}
+
+.btn-join-us button {
+    background-color: #00B14F;
+}
+
