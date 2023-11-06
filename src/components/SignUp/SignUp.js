@@ -1,11 +1,12 @@
 import React from "react";
-import "./Login.module.css"
-import "./Login.css"
+import "./SignUp.module.css";
+import "./SignUp.css";
 
-const Login = () => {
+const SignUp = () => {
   const [state, setState] = React.useState({
     email: "",
     password: "",
+    repassword: "",
   });
   const handleChange = (evt) => {
     const value = evt.target.value;
@@ -17,22 +18,28 @@ const Login = () => {
 
   const handleOnSubmit = (evt) => {
     evt.preventDefault();
+    const { email, password, repassword } = state;
+    if (password != repassword) {
+      alert("Password didn't match");
+    } else {
+      alert(`You are sign up with email: ${email} and password: ${password}`);
 
-    const { email, password } = state;
-    alert(`You are login with email: ${email} and password: ${password}`);
-
-    for (const key in state) {
-      setState({
-        ...state,
-        [key]: "",
-      });
+      if (password != repassword) {
+        alert("Your password doesn't match!!!");
+      }
+      for (const key in state) {
+        setState({
+          ...state,
+          [key]: "",
+        });
+      }
     }
   };
 
   return (
     <div className="form-container sign-in-container">
       <form onSubmit={handleOnSubmit}>
-        <h1>Login</h1>
+        <h1>Sign Up</h1>
         <div className="social-container">
           <a href="#" className="social">
             <i className="fab fa-facebook-f" />
@@ -59,11 +66,17 @@ const Login = () => {
           value={state.password}
           onChange={handleChange}
         />
-        <a href="#">Forgot your password?</a>
-        <button>Login</button>
+        <input
+          type="password"
+          name="repassword"
+          placeholder="Confirm password"
+          value={state.repassword}
+          onChange={handleChange}
+        />
+        <button>Sign Up</button>
       </form>
     </div>
   );
-}
+};
 
-export default Login;
+export default SignUp;

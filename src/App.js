@@ -19,6 +19,8 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import ContentReward from "./components/ContentReward/ContentReward";
 import ContentDownload from "./components/ContentDownload/ContentDownload";
 import Login from "./components/Login/Login";
+import UnderConstruction from "./components/UnderConstruction/UnderConstruction";
+import SignUp from "./components/SignUp/SignUp";
 // import MoreWayToShop from "./components/MoreWayToShop/MoreWayToShop";
 // import Helps from "./components/Helps/Helps";
 
@@ -32,7 +34,9 @@ const App = () => {
         <NavbarResponsive hamActive={hamActive} />
         <Switch>
           <Route path="/login" component={Login} />
+          <Route path="/signup" component={SignUp} />
           <Route path="/about" component={AboutUs} />
+          <Route path="/under" component={UnderConstruction} />
           {/* <Route path="/more-way-to-shop" component={MoreWayToShop} />
           <Route path="/helps" component={Helps} /> */}
           <Route path="/">

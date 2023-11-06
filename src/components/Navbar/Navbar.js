@@ -32,10 +32,10 @@ const Navbar = ({ hamActive, setHamActive }) => {
             <Link to="/about" className={`${styles.nav} center`}>
               About Us
             </Link>
-            <Link to="/activation-way" className={`${styles.nav} center`}>
+            <Link to="/under" className={`${styles.nav} center`}>
               Activation Way
             </Link>
-            <Link to="/helps" className={`${styles.nav} center`}>
+            <Link to="/under" className={`${styles.nav} center`}>
               Help
             </Link>
           </div>
@@ -43,7 +43,9 @@ const Navbar = ({ hamActive, setHamActive }) => {
             <a href="/login" className={styles.login}>
               Log in
             </a>
-            <button className={styles.signup}>Sign Up</button>
+            <a href="/signup">
+              <button className={styles.signup}>Sign Up</button>
+            </a>
           </div>
         </div>
       </div>
