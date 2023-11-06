@@ -9,10 +9,10 @@ const Footer = () => {
         <div className={`${styles.navbarInner} center`}>
           <div className={`${styles.navLeft}`}>Survey Now 2023</div>
           <div className="center">
-            <a href="/" className={`${styles.navLink}`}>
+            <a href="/policy" className={`${styles.navLink}`}>
               Terms of use
             </a>
-            <a href="/" className={`${styles.navLink}`}>
+            <a href="/policy" className={`${styles.navLink}`}>
               Privacy policy
             </a>
           </div>
@@ -23,7 +23,7 @@ const Footer = () => {
               </a>
             </span>
             <span>
-              <a href="#linkedin" className="fab fa-linkedin" style={{ color: "white" }}>
+              <a href="https://www.linkedin.com/search/results/all/?keywords=survey%20now&origin=GLOBAL_SEARCH_HEADER&sid=PY(" className="fab fa-linkedin" style={{ color: "white" }}>
                 {" "}
               </a>
             </span>
