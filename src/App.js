@@ -21,6 +21,7 @@ import ContentDownload from "./components/ContentDownload/ContentDownload";
 import Login from "./components/Login/Login";
 import UnderConstruction from "./components/UnderConstruction/UnderConstruction";
 import SignUp from "./components/SignUp/SignUp";
+import Policy from "./components/Policy/Policy";
 // import MoreWayToShop from "./components/MoreWayToShop/MoreWayToShop";
 // import Helps from "./components/Helps/Helps";
 
@@ -37,6 +38,7 @@ const App = () => {
           <Route path="/signup" component={SignUp} />
           <Route path="/about" component={AboutUs} />
           <Route path="/under" component={UnderConstruction} />
+          <Route path="/policy" component={Policy} />
           {/* <Route path="/more-way-to-shop" component={MoreWayToShop} />
           <Route path="/helps" component={Helps} /> */}
           <Route path="/">
