@@ -1,10 +1,13 @@
 
 .div-qr-and-store {
   display: flex;
+  margin-left: 8%;
 }
 
 .div-qr-and-store .div-qr {
   text-align: right;
+  margin-top: 0.5%;
+  margin-right: 1%;
 }
 
 .div-qr-and-store .div-qr img {
@@ -17,7 +20,7 @@
 }
 
 .div-store .img-first {
-  margin-top: 20px;
+  margin-top: 18px;
 }
 
 .div-store .img-second {

@@ -1,10 +1,10 @@
 import React from "react";
 import Divider from "@mui/material/Divider";
-import qrcode from "../../assets/qr-code.jpg";
+import qrcode from "../../assets/qrcode.png";
 import appstore from "../../assets/app-store.png";
-import googleplay from "../../assets/google-play.png"
+import googleplay from "../../assets/google-play.png";
 // import "../ContentDownload/ContentDownload.module.css"
-import "../ContentDownload/ContendDownload.css"
+import "../ContentDownload/ContendDownload.css";
 import styles from "./ContentDownload.module.css";
 
 const ContentDownload = () => {
@@ -19,8 +19,12 @@ const ContentDownload = () => {
           OR
         </Divider>
         <div className="div-store">
-          <img className="img-first" src={appstore} alt="app-store" />
-          <img className="img-second" src={googleplay} alt="google-store" />
+          <a href="https://www.apple.com/us/search/survey-now?src=globalnav">
+            <img className="img-first" src={appstore} alt="app-store" />
+          </a>
+          <a href="https://play.google.com/store/search?q=survey%20now&c=apps&hl=en-VN">
+            <img className="img-second" src={googleplay} alt="google-store" />
+          </a>
         </div>
       </div>
     </div>
