@@ -1,4 +1,4 @@
-.featuresWrapper {
+/* .featuresWrapper {
   flex-direction: column;
 }
 
@@ -26,8 +26,9 @@
   flex-direction: column;
   justify-content: space-between;
   background: #f6f7f8;
-  width: 350px;
-  height: 100%;
+  width: 100%; 
+  max-width: calc(33.33% - 20px); 
+  margin: 0 10px;
   border-radius: 0.5rem;
 }
 
@@ -73,10 +74,98 @@
   background: #039b03;
 }
 
-@media (max-width: 1100px) {
-  .featuresListWrapper {
-    justify-content: flex-start;
+@media (max-width: 900px) {
+  .featuresHeading {
+    font-size: 1.5rem;
   }
+}
+
+@media (max-width: 550px) {
+  .featureDiv {
+    max-width: 300px;
+  }
+
+  .shopBtn {
+    width: 100%;
+    max-width: none;
+  }
+} */
+.featuresWrapper {
+  flex-direction: column;
+}
+
+.featuresHeading {
+  margin: 50px 10px 20px 10px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.featuresListWrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.featuresList {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.featureDiv {
+  flex-direction: column;
+  justify-content: space-between;
+  background: #f6f7f8;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 10px;
+  border-radius: 0.5rem;
+}
+
+.featureDiv:nth-of-type(2) {
+  margin: 0 10px;
+}
+
+.feature {
+  font-size: 1.5rem;
+  padding: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.featureDescription {
+  padding: 0 20px 20px 20px;
+}
+
+.featureDescription p {
+  font-size: 90%;
+  text-align: center;
+}
+
+.featureImg {
+  width: 100%;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.shopBtn {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #0aad0a;
+  padding: 15px;
+  width: 90%;
+  max-width: 360px;
+  border-radius: 1rem;
+  outline-style: none;
+  border: none;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.shopBtn:hover {
+  background: #039b03;
 }
 
 @media (max-width: 900px) {
@@ -86,15 +175,13 @@
 }
 
 @media (max-width: 550px) {
-  .featureDiv:nth-of-type(2) {
-    margin: 0 10px;
-  }
-
   .featureDiv {
-    width: 300px;
+    max-width: 300px;
   }
 
   .shopBtn {
-    width: 90%;
+    width: 100%;
+    max-width: none;
   }
 }
+

@@ -23,5 +23,21 @@
 
 .btn-join-us button {
     background-color: #00B14F;
+    padding: 10px 20px; /* Add padding to the button for better tapability */
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .about-us-content {
+    margin: 3% 2% 0 2%; /* Adjust margin for smaller screens */
+  }
+
+  .btn-join-us {
+    margin-top: 3%; /* Further adjust margin for smaller screens */
+  }
+
+  .btn-join-us button {
+    font-size: 14px; /* Further adjust font size for smaller screens */
+  }
 }
 

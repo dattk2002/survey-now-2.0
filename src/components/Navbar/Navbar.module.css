@@ -214,3 +214,46 @@
     overflow: hidden;
   }
 }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navLinksWrapper {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    align-items: center; /* Center align links */
+    margin-top: 10px; /* Add some spacing between links */
+  }
+
+  .navRight {
+    justify-content: center; /* Center align right-side content */
+  }
+
+  .navLeft {
+    width: 100%; /* Take up the full width for smaller screens */
+    text-align: center; /* Center align text */
+    margin-bottom: 10px; /* Add some spacing at the bottom */
+  }
+
+  .navbarInner {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .signup,
+  .login {
+    font-size: 14px;
+  }
+
+  .signup {
+    margin-left: 10px;
+  }
+
+  .navLeft {
+    min-width: auto; /* Allow it to shrink as needed */
+  }
+}

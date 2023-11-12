@@ -30,13 +30,13 @@ const Navbar = ({ hamActive, setHamActive }) => {
           <div className={styles.navLinksWrapper}>
             <div className={styles.verticalLine}> </div>
             <Link to="/about" className={`${styles.nav} center`}>
-              About Us
+              Về chúng tôi
             </Link>
             <Link to="/policy" className={`${styles.nav} center`}>
-              Our Policy
+              Chính sách
             </Link>
             <Link to="/under" className={`${styles.nav} center`}>
-              Help
+              Trợ giúp
             </Link>
           </div>
           {/* <div>

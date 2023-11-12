@@ -2,6 +2,7 @@
 .div-qr-and-store {
   display: flex;
   margin-left: 5.9%;
+  
 }
 
 .div-qr-and-store .div-qr {
@@ -25,4 +26,31 @@
 
 .div-store .img-second {
   margin-top: 26px;
+}
+
+@media (max-width: 768px) {
+  .div-qr-and-store {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items horizontally on smaller screens */
+    margin-left: 0;
+  }
+
+  .div-qr-and-store .div-qr {
+    text-align: center; /* Center text on smaller screens */
+    margin-right: 0;
+  }
+
+  .div-qr-and-store .div-qr img {
+    width: 50%; /* Adjust image width for better visibility on smaller screens */
+  }
+
+  .div-store {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    margin-left: 0;
+  }
+
+  .div-store .img-first,
+  .div-store .img-second {
+    margin-top: 10px; /* Adjust margin for better spacing on smaller screens */
+  }
 }
