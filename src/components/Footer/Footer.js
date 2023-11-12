@@ -10,10 +10,10 @@ const Footer = () => {
           <div className={`${styles.navLeft}`}>Survey Now 2023</div>
           <div className="center">
             <a href="/policy" className={`${styles.navLink}`}>
-              Terms of use
+              Chính sách
             </a>
             <a href="/policy" className={`${styles.navLink}`}>
-              Privacy policy
+              Điều khoản
             </a>
           </div>
           <div>

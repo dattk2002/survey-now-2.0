@@ -16,7 +16,7 @@ const ContentDownload = () => {
           <img src={qrcode} alt="qr-code" />
         </div>
         <Divider orientation="vertical" flexItem>
-          OR
+          HOẶC
         </Divider>
         <div className="div-store">
           <a href="https://www.apple.com/us/search/survey-now?src=globalnav">
