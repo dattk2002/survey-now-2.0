@@ -45,7 +45,7 @@ const App = () => {
             <Hero />
             <Features1 />
             <Features2 />
-            <ContentReward />
+            {/* <ContentReward /> */}
             <ContentDownload />
             {/* <Growth /> */}
             {/* <Questions /> */}
