@@ -27,7 +27,7 @@ const App = () => {
     <Router>
       <div className="App">
         <Navbar hamActive={hamActive} setHamActive={setHamActive} />
-        <NavbarResponsive hamActive={hamActive} />
+        <NavbarResponsive hamActive={hamActive} setHamActive={setHamActive}/>
         <Switch>
           <Route path="/login" component={Login} />
           <Route path="/signup" component={SignUp} />

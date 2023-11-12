@@ -1,0 +1,68 @@
+/* NavbarResponsive.css */
+.navResWrapper {
+    position: absolute;
+    top: min(10vh, 100px);
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    display: none;
+    background: white;
+    z-index: 1000;
+    flex-direction: column;
+    list-style-type: none;
+    padding-top: 10px;
+    transition: transform 0.3s ease-in-out; /* Added transition for smoother animation */
+  }
+  
+  .navResInner {
+    margin: 0 15px;
+    overflow: hidden;
+  }
+  
+  .navResLinks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 5px;
+  }
+  
+  .navR {
+    margin: 15px 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #343538;
+    text-decoration: none;
+  }
+  
+  .navResWrapper.open {
+    transform: translateY(0); /* Slide in from the top when open */
+  }
+  
+  .navRdropDown {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .flag-icon {
+    margin-right: 5px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 900px) {
+    .navResWrapper {
+      display: flex;
+    }
+  }
+  
+  @media (max-width: 550px) {
+    .navR {
+      font-size: 1rem;
+    }
+  }
+  
