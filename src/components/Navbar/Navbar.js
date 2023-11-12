@@ -39,14 +39,14 @@ const Navbar = ({ hamActive, setHamActive }) => {
               Help
             </Link>
           </div>
-          <div>
+          {/* <div>
             <a href="/login" className={styles.login}>
               Log in
             </a>
             <a href="/signup">
               <button className={styles.signup}>Sign Up</button>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>
