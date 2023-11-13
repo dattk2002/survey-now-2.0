@@ -60,3 +60,20 @@ section p:first-child,
   }
 }
 
+@media screen and (max-width: 768px) {
+  .timer div:last-child {
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .timer div:last-child {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1em;
+  }
+
+  .countdown-text-content {
+    margin-right: 0;
+  }
+}
