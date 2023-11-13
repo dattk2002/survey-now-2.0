@@ -34,7 +34,7 @@
     color: #343538;
     text-decoration: none;
   }
-  
+
   .navResWrapper.open {
     transform: translateY(0); /* Slide in from the top when open */
   }

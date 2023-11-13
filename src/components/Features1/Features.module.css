@@ -137,14 +137,20 @@
   text-align: center;
 }
 
+.feature p {
+  font-family:  "Courier New", cursive, sans-serif;
+  font-weight: bolder;
+}
+
 .featureDescription {
   padding: 0 20px 20px 20px;
 }
 
 .featureDescription p {
-  font-size: 90%;
+  font-size: 120%;
   text-align: center;
   height: 150px;
+  font-family: monospace;
 }
 
 .featureImg {
