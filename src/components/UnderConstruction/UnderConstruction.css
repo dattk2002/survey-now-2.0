@@ -32,9 +32,14 @@
   font-size: 8em;
 }
 
-h2 {
+.countdown-text-content h2 {
   font-weight: 600;
   margin-bottom: 0.5em;
+  font-size: 40px;
+}
+
+.countdown-text-content p {
+  font-size: 15px;
 }
 
 .timer div:last-child {
@@ -50,6 +55,10 @@ h2 {
 section p:first-child,
 .timer div:last-child span {
   font-size: 3em;
+}
+
+.mdi:before, .mdi-set {
+  font-size: 80px;
 }
 
 @media screen and (max-width: 480px) {
