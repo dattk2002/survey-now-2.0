@@ -13,6 +13,7 @@ const Features = () => {
           {features1.map(({ feature, description, image}) => {
             return (
               <div className={`${styles.featureDiv} center`}>
+              {/* <div className="items"> */}
                 <Fragment>
                   <div className={styles.feature}>
                     <p>{feature}</p>
@@ -20,7 +21,7 @@ const Features = () => {
                   <div className={styles.featureDescription}>
                     <p>{description}</p>
                   </div>
-                  <div>
+                  <div className="items-img">
                     <img className={styles.featureImg} src={image} alt="img" />
                   </div>
                   
